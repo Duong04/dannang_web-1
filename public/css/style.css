@@ -176,14 +176,15 @@ a {
 
 .project-title {
     width: 100%;
-    height: 50%;
+    height: 0;
     position: absolute;
     bottom: 0;
     background-image: linear-gradient(to top, rgb(226 226 226 / 86%), rgb(146 146 146 / 53%), rgba(0, 0, 0, 0));
-    transform: translateY(85px) scale(0);
+    transform: translateY(85px);
     border-radius: 0 0 1rem 1rem;
-    opacity: 0;
+    display: none;
     transition: all ease 0.5s;
+    animation: height ease 0.5s;
 }
 
 .project-title::before {
@@ -197,11 +198,18 @@ a {
     text-align: center;
     font-weight: 700;
     color: #0037ff;
+    transform: translateY(50px);
+    transition: all ease 0.4s;
 }
 
 .project:hover .project-title {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
+    display: block;
+    height: 50%;
+    transform: translateY(0px);
+}
+
+.project:hover .project-title::before {
+    transform: translateY(0);
 }
 
 .news-item {
@@ -306,6 +314,14 @@ footer {
     justify-content: center;
     border: 1px solid var(--white-color);
     border-radius: 50%;
+}
+
+@keyframes height {
+    from {
+        height: 0;
+    }to {
+        height: 50%;
+    }
 }
 
 @keyframes opacity {
