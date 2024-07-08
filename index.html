@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <main>
+        <header class="bg-dark position-fixed start-0 end-0 z-3">
+            <div class="container-xl px-sm-5">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand logo" href="#"><img class="w-100" src="./public/img/logo.png" alt=""></a>
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon text-white"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 active text-white" href="#">TRANG CHỦ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 text-white" href="#">GIỚI THIỆU</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 text-white" href="#">SẢN PHẨM <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="position-absolute list-unstyled nav-child bg-dark">
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CỬA NHÔM KÍNH HIỆN ĐẠI</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CỬA KÍNH TRƯỢT - LÙA - LÙA TRƯỢT</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CẦU THANG KÍNH CƯỜNG LỰC</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">LAN CAN KÍNH CƯỜNG LỰC</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">KÍNH ỐP BẾP</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CABIN PHÒNG TẮM KÍNH</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CỬA CUỐN KHE THOÁNG CHO NHÀ PHỐ</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CỬA SẮT | CỬA KÉO</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">CỔNG SẮT CÁC LOẠI</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 text-white" href="#">THI CÔNG LẮP ĐẶT <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="position-absolute list-unstyled nav-child bg-dark">
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">SỬA CHỮA CỬA</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">THI CÔNG - LẮP ĐẶT CỬA NHÔM KÍNH</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">THI CÔNG - LẮP ĐẶT CẦU THANG KÍNH</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">THI CÔNG LẮP ĐẶT NỘI THẤT NHÔM KÍNH</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">THI CÔNG - LẮP ĐẶT CỬA CUỐN</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">THI CÔNG - LẮP ĐẶT CỬA SẮT</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">THI CÔNG - LẮP ĐẶT NHÀ TIỀN CHẾ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 text-white" href="#">CÔNG TRÌNH</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 text-white" href="#">TIN TỨC <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="position-absolute list-unstyled nav-child bg-dark">
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">Tips nhỏ</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">Thị trường</a></li>
+                                        <li><a class="nav-link fw-bolder text-white fs-7 py-2 px-3" href="">Nôi bộ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bolder fs-7 px-2 p-xl-3 text-white" href="#">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./public/img/banner/slide-nhom-kinh--moi-3936.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./public/img/banner/slide-nhom-kinh-moi-2-7983.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-icon carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <article>
+            <section class="py-5 bg-third">
+                <div class="container-xl px-sm-5 d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-7 p-sm-3">
+                        <h2 class="text-primary">SỬA CỬA NHANH NHA TRANG</h2>
+                        <p class="fs-4">Chúng tôi chuyên lắp đặt và thi công Cửa Nhôm Kính hiện đại, đẳng cấp châu Âu</p>
+                        <p style="text-align: justify;">Trải qua quãng thời gian dài hoạt động, bằng sự cố gắng và chăm chỉ làm việc Sửa cửa Nha Trang đã tạo chỗ đứng vững chắc cũng như niềm tin của Quý khách hàng dành cho Sửa cửa Nha Trang. Sửa cửa Nha Trang luôn đề cao tầm quan trọng trong việc quản lý chất lượng sản xuất và thi công lắp đặt. Với đội ngũ chuyên nghiệp, quy trình sản xuất đạt tiêu chuẩn. Sửa cửa Nha Trang không ngừng nghiên cứu , phát triển và đưa ra thị trường các dòng sản phẩm mẫu mã đẹp và đạt chất lượng tốt nhất đến tay khách hàng.</p>
+                        <a href="" class="btn btn-primary">Xem thêm</a>
+                    </div>
+                    <div class="col-12 col-md-5 py-3 p-sm-3">
+                        <div id="carousel-2" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-ride="true">
+                            <div class="carousel-inner rounded-4">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="./public/img/slider/396543146_245617278509766_6505401787551160253_n-7736.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="./public/img/slider/352799970_161756930229135_2311855320611829434_n-0735.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="./public/img/slider/486701357-7862.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                                <span class="carousel-icon"><i class="bi bi-chevron-left"></i></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                                <span class="carousel-icon"><i class="bi bi-chevron-right"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container-xl px-sm-5">
+                    <h4 class="text-center">SẢN PHẨM CỦA CHÚNG TÔI</h4>
+                    <p class="text-center line">Nhôm Kính Quyết Tín chuyên Cửa Nhôm Kính hiện đại, đẳng cấp châu Âu</p>
+                    <ul class="mt-5 nav nav-pills d-flex justify-content-center g-20">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item active" data-bs-toggle="tab" href="#tab-1">CỬA NHÔM KÍNH HIỆN ĐẠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-2">CỬA KÍNH TRƯỢT - LÙA - LÙA TRƯỢT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-3">CẦU THANG KÍNH CƯỜNG LỰC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-4">LAN CAN KÍNH CƯỜNG LỰC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-5">KÍNH ỐP BẾP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-6">CABIN PHÒNG TẮM KÍNH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-7">CỬA CUỐN KHE THOÁNG CHO NHÀ PHỐ</a>
+                        </li><li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-8">CỬA SẮT | CỬA KÉO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary border border-2 p-md-2 text-black fs-7 tab-item" data-bs-toggle="tab" href="#tab-9">CỔNG SẮT CÁC LOẠI</a>
+                        </li>
+                    </ul>
+                    <div class="mt-5 tab-content">
+                        <div id="tab-1" class="tab-pane fade show active">
+                            <div class="d-grid-md-3 d-grid-3">
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-1.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-2.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-3.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-4.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-5.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-6.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show">
+                            <div class="d-grid-md-3 d-grid-3">
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-2.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-3.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-1.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-4.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-6.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-5.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show">
+                            <div class="d-grid-md-3 d-grid-3">
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-6.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-4.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-2.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-3.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-5.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-1.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show">
+                            <div class="d-grid-md-3 d-grid-3">
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-5.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-2.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-6.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-1.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-3.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column g-10">
+                                    <div class="item-img rounded-4 overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4 object-fit-cover" src="./public//img/products/product-4.jpg" alt="">
+                                    </div>
+                                    <h6 class="text-center fw-semibold">CỬA SỐ MỞ QUAY 4 CÁNH</h6>
+                                    <div class="col-12 col-md-6 text-center mx-auto">
+                                        <a href="" class="btn btn-outline-primary w-100">Liên hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5 bg-third">
+                <div class="container-xl px-sm-5">
+                    <h4 class="text-center">SẢN PHẨM CỦA CHÚNG TÔI</h4>
+                    <p class="text-center line">Nhôm Kính Quyết Tín chuyên Cửa Nhôm Kính hiện đại, đẳng cấp châu Âu</p>
+                    <div class="d-grid-sm-3 d-grid-md-3 d-grid-3 mt-5">
+                        <div>
+                            <a class="position-relative project overflow-hidden" href="">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/outstanding/image-1.jpg" alt="">
+                                </div>
+                                <div class="project-title" data-text="CÔNG TRÌNH KHÁCH SẠN VTV - NINH THUỶ -NINH HOÀ"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="position-relative project overflow-hidden" href="">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/outstanding/image-2.jpg" alt="">
+                                </div>
+                                <div class="project-title" data-text="CÔNG TRÌNH CAFE A PÁO - HÒN CHỒNG - NHA TRANG"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="position-relative project overflow-hidden" href="">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/outstanding/image-3.jpg" alt="">
+                                </div>
+                                <div class="project-title" data-text="CÔNG TRÌNH CAFE RED FOX - NGUYỄN THỊ NGỌC OANH - THỊ XÃ NINH HOÀ"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="position-relative project overflow-hidden" href="">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/outstanding/image-4.jpg" alt="">
+                                </div>
+                                <div class="project-title" data-text="Khách sạn View biển Nha Trang"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="position-relative project overflow-hidden" href="">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/outstanding/image-5.jpg" alt="">
+                                </div>
+                                <div class="project-title" data-text="Dự án nhà ở Anh Hùng - Tp Nha Trang"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="position-relative project overflow-hidden" href="">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/outstanding/image-6.jpg" alt="">
+                                </div>
+                                <div class="project-title" data-text="XU HƯỚNG THIẾT KẾ KHÔNG GIAN SỐNG XANH"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container-xl px-sm-5">
+                    <h4 class="text-center">Tin tức</h4>
+                    <p class="text-center line">Nhôm Kính Quyết Tín chuyên Cửa Nhôm Kính hiện đại, đẳng cấp châu Âu</p>
+                    <div class="news-slider d-grid-3 mt-5">
+                        <div class="news-item">
+                            <a href="" class="text-decoration-none text-black">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/news/new-4.jpg" alt="">
+                                </div>
+                                <h6 class="mt-3 fw-semibold">LAN CAN KÍNH CƯỜNG LỰC ĐẸP 2024 - GIẢI ĐÁP & TƯ VẤN</h6>
+                                <div class="d-flex align-items-center g-10 fs-7">
+                                    <i class="bi bi-calendar3"></i>
+                                    <span>30/09/2024</span>
+                                </div>
+                                <p class="news-text">Chúng tôi là đơn vị lâu năm trong lĩnh vực phòng tắm kính cường lực tại Nha Trang. 
+                                    Đội ngũ nhân viên và kĩ thuật viên được đào tạo bài bản, tác phong làm việc chuyên 
+                                    nghiệp sẽ mang đến cho khách hàng những dịch vụ và sản phẩm tốt nhất. Hotline: 0366.469.170</p>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="" class="text-decoration-none text-black">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/news/new-1.jpg" alt="">
+                                </div>
+                                <h6 class="mt-3 fw-semibold">LAN CAN KÍNH CƯỜNG LỰC ĐẸP 2024 - GIẢI ĐÁP & TƯ VẤN</h6>
+                                <div class="d-flex align-items-center g-10 fs-7">
+                                    <i class="bi bi-calendar3"></i>
+                                    <span>30/09/2024</span>
+                                </div>
+                                <p class="news-text">Chúng tôi là đơn vị lâu năm trong lĩnh vực phòng tắm kính cường lực tại Nha Trang. 
+                                    Đội ngũ nhân viên và kĩ thuật viên được đào tạo bài bản, tác phong làm việc chuyên 
+                                    nghiệp sẽ mang đến cho khách hàng những dịch vụ và sản phẩm tốt nhất. Hotline: 0366.469.170</p>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="" class="text-decoration-none text-black">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/news/new-2.jpg" alt="">
+                                </div>
+                                <h6 class="mt-3 fw-semibold">LAN CAN KÍNH CƯỜNG LỰC ĐẸP 2024 - GIẢI ĐÁP & TƯ VẤN</h6>
+                                <div class="d-flex align-items-center g-10 fs-7">
+                                    <i class="bi bi-calendar3"></i>
+                                    <span>30/09/2024</span>
+                                </div>
+                                <p class="news-text">Chúng tôi là đơn vị lâu năm trong lĩnh vực phòng tắm kính cường lực tại Nha Trang. 
+                                    Đội ngũ nhân viên và kĩ thuật viên được đào tạo bài bản, tác phong làm việc chuyên 
+                                    nghiệp sẽ mang đến cho khách hàng những dịch vụ và sản phẩm tốt nhất. Hotline: 0366.469.170</p>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="" class="text-decoration-none text-black">
+                                <div class="item-img overflow-hidden rounded-4">
+                                    <img class="w-100 object-fit-cover rounded-4" src="./public/img/news/new-3.jpg" alt="">
+                                </div>
+                                <h6 class="mt-3 fw-semibold">LAN CAN KÍNH CƯỜNG LỰC ĐẸP 2024 - GIẢI ĐÁP & TƯ VẤN</h6>
+                                <div class="d-flex align-items-center g-10 fs-7">
+                                    <i class="bi bi-calendar3"></i>
+                                    <span>30/09/2024</span>
+                                </div>
+                                <p class="news-text">Chúng tôi là đơn vị lâu năm trong lĩnh vực phòng tắm kính cường lực tại Nha Trang. 
+                                    Đội ngũ nhân viên và kĩ thuật viên được đào tạo bài bản, tác phong làm việc chuyên 
+                                    nghiệp sẽ mang đến cho khách hàng những dịch vụ và sản phẩm tốt nhất. Hotline: 0366.469.170</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5 bg-third">
+                <div class="container-xl px-sm-5 row mx-auto">
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div>
+                            <img width="65px" src="./public/img/icon/icons8-online-support-100-1672.png" alt="">
+                        </div>
+                        <div class="ms-1">
+                            <h6>HỖ TRỢ ONLINE</h6>
+                            <p class="fs-7">Liên hệ với chúng tôi để được tư vấn thiết kế nhanh nhất</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div>
+                            <img width="65px" src="./public/img/icon/icons8-free-shipping-100-4408.png" alt="">
+                        </div>
+                        <div class="ms-1">
+                            <h6>Miễn Phí Vận Chuyển Nội Thành</h6>
+                            <p class="fs-7">Tất cả các đơn hàng nội thành chúng tôi cung cấp luôn được miễn phí vận chuyển</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div>
+                            <img width="65px" src="./public/img/icon/icons8-hand-shake-100-1406.png" alt="">
+                        </div>
+                        <div class="ms-1">
+                            <h6>Cam Kết Phụ Kiện Chính Hãng</h6>
+                            <p class="fs-7">cung cấp phụ kiện, linh kiện chính hãng từ các thương hiệu nổi tiếng trong lĩnh vực kính</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div>
+                            <img width="65px" src="./public/img/icon/icons8-design-100-8338.png" alt="">
+                        </div>
+                        <div class="ms-1">
+                            <h6>Tư Vấn Thiết Kế Hoàn Toàn Miễn Phí</h6>
+                            <p class="fs-7">Tất cả các khách hàng khi đến với chúng tôi đều được tư vấn hoàn toàn MIỄN PHÍ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-3">
+                <div class="container-xl px-sm-5">
+                    <div class="box-shadow py-5">
+                        <h4 class="text-center line">ĐĂNG KÝ TƯ VẤN</h4>
+                        <p class="text-center mt-5 px-3">Quý khách hàng muốn đặt hàng nhanh hoặc cần tư vấn hãy điền thông tin vào form bên dưới, chúng tôi sẽ hỗ trợ quý khách hàng nhanh nhất !</p>
+                        <div>
+                            <form action="" class="row mx-auto">
+                                <div class="mt-3 col-sm-6 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Họ và tên *" required>
+                                </div>
+                                <div class="mt-3 col-sm-6 col-md-4">
+                                    <input type="number" class="form-control" placeholder="Điện thoại *" required>
+                                </div>
+                                <div class="mt-3 col-sm-6 col-md-4">
+                                    <input type="email" class="form-control" placeholder="Email *" required>
+                                </div>
+                                <div class="mt-3 col-sm-6 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Địa chỉ *" required>
+                                </div>
+                                <div class="mt-3 col-sm-6 col-md-4">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Chọn sản phẩm</option>
+                                        <option value="">Sản phẩm 1</option>
+                                        <option value="">Sản phẩm 2</option>
+                                        <option value="">Sản phẩm 3</option>
+                                    </select>
+                                </div>
+                                <div class="mt-3 col-sm-6 col-md-4">
+                                    <input type="number" class="form-control" placeholder="Số lượng *" required>
+                                </div>
+                                <div class="mt-3 col-12">
+                                    <textarea rows="5" name="" id="" class="form-control" placeholder="Nội dung"></textarea>
+                                </div>
+                                <div class="mt-3 col-12 text-center">
+                                    <button class="btn btn-primary">GỬI YÊU CẦU</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer class="py-5">
+            <div class="container-xl px-sm-5 row mx-auto">
+                <div class="col-12 col-md-4 mt-4">
+                    <h5 class="line-2 py-2 text-white fw-semibold">SỬA CỬA NHANH NHA TRANG</h5>
+                    <ul class="text-white list-unstyled d-flex flex-column g-10 mt-3">
+                        <li class="d-flex g-10">
+                            <div><span class="icon-i"><i class="bi bi-geo-alt-fill"></i></span></div>
+                            <a href="" class="text-white nav-link">Đại lộ Nguyễn Tất Thành, Phước Đồng, thành phố Nha Trang, tỉnh Khánh Hòa</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <div><span class="icon-i"><i class="bi bi-telephone"></i></span></div>
+                            <a href="" class="text-white nav-link">0366469170</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <div><span class="icon-i"><i class="bi bi-envelope"></i></span></div>
+                            <a href="" class="text-white nav-link">hoaiwindows998@gmail.com</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <a href="" class="icon-i text-white"><i class="bi bi-facebook"></i></a>
+                            <a href="" class="icon-i text-white"><i class="bi bi-instagram"></i></a>
+                            <a href="" class="icon-i text-white"><i class="bi bi-twitter"></i></a>
+                            <a href="" class="icon-i text-white"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mt-4">
+                    <h5 class="line-2 py-2 text-white fw-semibold">HỖ TRỢ KHÁCH HÀNG</h5>
+                    <ul class="text-white list-unstyled d-flex flex-column g-10 mt-3">
+                        <li class="d-flex g-10">
+                            <a href="" class="text-white nav-link">Chính sách mua hàng online</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <a href="" class="text-white nav-link">Chính sách bán hàng</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <a href="" class="text-white nav-link">Chính sách giao hàng và đổi trả</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <a href="" class="text-white nav-link">Chính sách bảo hành</a>
+                        </li>
+                        <li class="d-flex g-10">
+                            <a href="" class="text-white nav-link">Chính sách bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mt-4">
+                    <h5 class="line-2 py-2 text-white fw-semibold">KẾT NỐI VỚI CHÚNG TÔI</h5>
+                    <div class="fb-page fb_iframe_widget mt-3" data-href="https://www.facebook.com/profile.php?id=100066728326787" data-tabs="timeline" data-height="200" data-width="100%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=472289797190551&amp;container_width=370&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100066728326787&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=420"><span style="vertical-align: bottom; width: 370px; height: 200px;"><iframe name="fb8d547390fce0d2d" width="420px" height="200px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v10.0/plugins/page.php?adapt_container_width=true&amp;app_id=472289797190551&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfc892522ca55ecd31%26domain%3Dsuacuanhatrang.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fsuacuanhatrang.com%252Ff4c3400ab62aa25ff%26relation%3Dparent.parent&amp;container_width=370&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100066728326787&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=420" style="border: none; visibility: visible; width: 100%; height: 200px;" class=""></iframe></span></div>
+                </div>
+            </div>
+        </footer>
+        <div class="bg-grey py-2 fs-7 text-center">Copyright © 2023 suacuanhatrang.com All rights reserved</div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
